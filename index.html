@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>经纬未断 · 广西壮锦专题</title>
+<meta name="description" content="广西壮锦专题网站：从汉代锦片到2026年世界杯授权商品，拆解一门千年手艺的经纬、纹样与当下的处境。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230C1216'/%3E%3Cpath d='M16 3 29 16 16 29 3 16Z' fill='none' stroke='%23C43B2E' stroke-width='2'/%3E%3Cpath d='M16 10 22 16 16 22 10 16Z' fill='%23D89A3E'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
+<style>
+:root{
+  --ink:#0C1216;
+  --ink2:#111B21;
+  --ink3:#16232A;
+  --paper:#F2EADC;
+  --paper2:#E4D8C2;
+  --red:#C43B2E;
+  --ochre:#D89A3E;
+  --indigo:#3C6E9E;
+  --green:#5C8050;
+  --dim:#A7B3B6;
+  --tx:var(--paper);
+  --tx-dim:#A7B3B6;
+  --rule:rgba(242,234,220,.16);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--ink);color:var(--tx);
+  font-family:'Noto Sans SC',system-ui,-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;
+  font-weight:300;line-height:1.8;-webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:1;
+  background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.028) 0 1px,transparent 1px 22px);
+}
+.serif{font-family:'Noto Serif SC',Georgia,'Songti SC',serif}
+a{color:inherit}
+::selection{background:var(--red);color:var(--paper)}
+
+/* ---------- 顶栏 ---------- */
+.topbar{position:sticky;top:0;z-index:60;background:rgba(10,15,19,.9);backdrop-filter:blur(10px);border-bottom:1px solid rgba(242,234,220,.12)}
+.topbar-in{display:flex;align-items:center;justify-content:space-between;gap:20px;max-width:1280px;margin:0 auto;padding:11px clamp(18px,4vw,48px)}
+.brand{display:flex;align-items:baseline;gap:10px;text-decoration:none;flex:0 0 auto}
+.brand b{font-family:'Noto Serif SC',serif;font-size:19px;font-weight:700;letter-spacing:.08em;color:var(--paper)}
+.brand i{font-style:normal;font-size:11px;color:#7C898C;letter-spacing:.14em}
+.menu{display:flex;gap:0;flex-wrap:wrap;justify-content:flex-end}
+.menu a{position:relative;padding:7px 11px;font-size:13px;color:#B9C4C6;text-decoration:none;letter-spacing:.05em;transition:color .18s}
+.menu a:hover{color:var(--paper)}
+.menu a.on{color:var(--ochre)}
+.menu a.on::after{content:'';position:absolute;left:11px;right:11px;bottom:-1px;height:2px;background:var(--ochre)}
+
+/* ---------- 视图 ---------- */
+.view{display:none}
+.view.on{display:block;position:relative;z-index:2}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;min-height:min(90svh,760px);display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.hero-media{position:absolute;inset:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:52% 56%;filter:saturate(.9) contrast(1.02)}
+.hero-scrim{position:absolute;inset:0;background:
+  linear-gradient(180deg,rgba(9,14,18,.58) 0%,rgba(9,14,18,.34) 26%,rgba(9,14,18,.84) 76%,var(--ink) 100%)}
+.hero-in{position:relative;max-width:1280px;width:100%;margin:0 auto;padding:clamp(80px,14vh,150px) clamp(18px,4vw,48px) clamp(40px,6vh,74px);display:grid;grid-template-columns:minmax(0,1fr) 60px;gap:clamp(16px,3vw,40px);align-items:end}
+.hero-label{display:flex;flex-wrap:wrap;align-items:center;gap:12px;font-size:12px;letter-spacing:.14em;color:#CFD6D5;margin-bottom:clamp(16px,2.6vh,26px)}
+.hero-label em{font-style:normal;color:var(--ochre)}
+.hero-label s{width:1px;height:14px;background:rgba(242,234,220,.3);text-decoration:none}
+.hero h1{font-family:'Noto Serif SC',serif;font-weight:900;font-size:clamp(46px,8.6vw,108px);line-height:1.02;letter-spacing:.08em;margin:0 0 clamp(18px,3vh,28px);text-shadow:0 2px 30px rgba(0,0,0,.35)}
+.hero-sub{max-width:34em;font-size:clamp(15px,1.5vw,17px);line-height:1.9;color:#E3E6E2;margin:0}
+.hero-sub b{font-weight:500;color:#fff}
+.hero-side{writing-mode:vertical-rl;font-family:'Noto Serif SC',serif;font-size:12.5px;letter-spacing:.32em;color:rgba(242,234,220,.66);border-right:1px solid rgba(242,234,220,.22);padding-right:14px;justify-self:end;align-self:end;margin-bottom:6px}
+.hero-foot{position:relative;max-width:1280px;width:100%;margin:0 auto;padding:0 clamp(18px,4vw,48px)}
+.hero-place{display:flex;gap:22px;flex-wrap:wrap;padding:18px 0 0;border-top:1px solid rgba(242,234,220,.16);font-size:12px;letter-spacing:.1em;color:#94A0A3}
+.weave-strip{height:9px;background:
+  repeating-linear-gradient(135deg,var(--red) 0 9px,var(--ochre) 9px 18px,var(--indigo) 18px 27px,var(--green) 27px 36px);
+  opacity:.55}
+
+/* ---------- 通用版式 ---------- */
+.band{position:relative;padding:clamp(52px,7vw,100px) 0}
+.band--ink2{background:var(--ink2)}
+.band--paper{background:var(--paper);--tx:#141D22;--tx-dim:#4A575C;--rule:rgba(20,28,34,.16)}
+.band--paper::before{opacity:.35}
+.inner{position:relative;max-width:1280px;margin:0 auto;padding:0 clamp(18px,4vw,48px)}
+.kicker{display:flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.16em;color:var(--ochre);margin:0 0 16px}
+.kicker::before{content:'';width:20px;height:1px;background:currentColor;flex:0 0 auto}
+h2.title{font-family:'Noto Serif SC',serif;font-weight:700;font-size:clamp(26px,3.5vw,40px);line-height:1.3;letter-spacing:.02em;margin:0 0 18px;color:var(--tx)}
+.lede{max-width:44em;font-size:15.5px;line-height:1.95;color:var(--tx-dim);margin:0 0 14px}
+.lede b{font-weight:500;color:var(--tx)}
+.src{font-size:11.5px;letter-spacing:.04em;color:#98A4A6;margin-top:14px;line-height:1.7}
+.band--paper .src{color:#6A767A}
+
+/* ---------- 首页：导语 ---------- */
+.opening{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:start}
+.opening .col p{font-size:16px;line-height:2.05;margin:0 0 20px;color:#CBD3D2}
+.opening .col p:first-of-type::first-letter{font-family:'Noto Serif SC',serif;font-size:3.1em;float:left;line-height:.92;padding:6px 12px 0 0;color:var(--ochre);font-weight:700}
+opening-figure{display:none}
+.quote-card{background:var(--ink2);border:1px solid rgba(242,234,220,.14);padding:clamp(22px,3vw,32px);position:sticky;top:96px}
+.quote-card p{margin:0 0 14px;font-family:'Noto Serif SC',serif;font-size:19px;line-height:1.85;color:var(--paper)}
+.quote-card span{display:block;font-size:12px;letter-spacing:.08em;color:#8B979A}
+
+/* ---------- 数字带 ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);margin-top:clamp(36px,5vw,60px);border-block:1px solid var(--rule)}
+.stat{background:var(--ink);padding:clamp(18px,2.5vw,28px)}
+.band--ink2 .stat{background:var(--ink2)}
+.stat b{display:block;font-family:'Noto Serif SC',serif;font-weight:700;font-size:clamp(26px,3.8vw,42px);line-height:1.05;color:var(--paper);letter-spacing:.01em}
+.stat b small{font-size:.42em;font-weight:400;margin-left:4px;color:var(--ochre);letter-spacing:.06em}
+.stat em{display:block;margin-top:8px;font-style:normal;font-size:12.5px;line-height:1.6;color:#94A0A3}
+
+/* ---------- 栏目入口 ---------- */
+.entries{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1px;background:rgba(242,234,220,.13);margin-top:clamp(32px,4vw,52px)}
+.entry{display:block;background:var(--ink);padding:clamp(20px,2.6vw,28px) clamp(16px,2vw,22px);text-decoration:none;transition:background .22s}
+.entry:hover{background:#16232A}
+.entry h3{font-family:'Noto Serif SC',serif;font-weight:600;font-size:19px;margin:0 0 8px;color:var(--paper)}
+.entry p{font-size:12.5px;line-height:1.75;color:#93A0A3;margin:0}
+.entry i{display:block;width:22px;height:2px;background:var(--ochre);margin-bottom:14px;transition:width .25s}
+.entry:hover i{width:44px}
+
+/* ---------- 溯源：时间轴 ---------- */
+.tl{display:grid;grid-template-columns:96px 26px minmax(0,1fr);margin-top:clamp(30px,4vw,44px)}
+.tl-row{display:contents}
+.tl-time{font-family:'Noto Serif SC',serif;font-size:14px;color:var(--ochre);text-align:right;padding:10px 16px 0 0;line-height:1.5;white-space:nowrap}
+.tl-axis{position:relative}
+.tl-axis::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--rule)}
+.tl-row:first-child .tl-axis::before{top:16px}
+.tl-row:last-child .tl-axis::before{bottom:auto;height:16px}
+.tl-dot{position:absolute;left:50%;top:14px;width:8px;height:8px;margin-left:-4px;transform:rotate(45deg);background:var(--red);box-shadow:0 0 0 4px rgba(196,59,46,.12)}
+.tl-dot--hi{background:var(--ochre);box-shadow:0 0 0 4px rgba(216,154,62,.16);width:10px;height:10px;margin-left:-5px}
+.tl-body{padding:6px 0 clamp(20px,2.6vw,30px) 22px}
+.tl-body h3{font-family:'Noto Serif SC',serif;font-weight:600;font-size:17.5px;margin:0 0 6px;color:var(--tx);line-height:1.5}
+.tl-body p{margin:0;font-size:13.5px;line-height:1.85;color:var(--tx-dim);max-width:38em}
+.tl-body .cite{display:inline-block;margin-top:6px;font-size:11.5px;color:#7E8B8E}
+
+/* 古籍引文 */
+.quote{display:grid;grid-template-columns:28px minmax(0,1fr);gap:18px;margin-top:clamp(30px,4vw,46px);padding:clamp(22px,3vw,34px);background:var(--ink2);border-left:2px solid var(--ochre)}
+.quote .mark{font-family:'Noto Serif SC',serif;font-size:26px;color:var(--ochre);line-height:1}
+.quote p{margin:0;font-family:'Noto Serif SC',serif;font-size:16.5px;line-height:2;color:#E7E1D4}
+.quote p + p{margin-top:12px;font-size:14.5px;color:var(--tx-dim);font-family:'Noto Sans SC',sans-serif}
+.quote cite{display:block;margin-top:12px;font-style:normal;font-size:12px;letter-spacing:.06em;color:#8B979A}
+
+/* 图文并置 */
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center;margin-top:clamp(34px,4.5vw,56px)}
+.figure{margin:0}
+.figure img{display:block;width:100%;height:auto;border:1px solid rgba(0,0,0,.2)}
+.figure figcaption{font-size:11.5px;line-height:1.7;color:#98A4A6;margin-top:10px}
+.band--paper .figure figcaption{color:#6A767A}
+.grayscale img{filter:grayscale(1) contrast(1.05);opacity:.92}
+
+/* 移动端 */
+@media (max-width:1040px){
+  .opening{grid-template-columns:minmax(0,1fr)}
+  .quote-card{position:static}
+  .entries{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero-in{grid-template-columns:minmax(0,1fr)}
+  .hero-side{display:none}
+}
+@media (max-width:760px){
+  .topbar-in{flex-wrap:wrap;gap:6px;padding:8px 16px}
+  .menu{gap:0;width:100%;justify-content:flex-start;overflow-x:auto}
+  .menu a{padding:6px 9px;font-size:12px}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .entries{grid-template-columns:minmax(0,1fr)}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .tl{grid-template-columns:64px 22px minmax(0,1fr)}
+  .tl-time{font-size:12px;padding-right:12px}
+  .tl-body{padding-left:16px}
+  .hero{min-height:78svh}
+}
+/* ---------- 工序 ---------- */
+.proc{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);margin-top:34px}
+.proc-col{background:var(--ink);padding:22px 18px}
+.proc-col.hl{outline:1px solid rgba(216,154,62,.4);outline-offset:-1px;background:#131E24}
+.proc-col .no{font-size:11px;letter-spacing:.14em;color:var(--ochre)}
+.proc-col h3{font-family:'Noto Serif SC',serif;font-weight:600;font-size:16px;margin:6px 0 2px;color:var(--tx)}
+.proc-col .cnt{font-size:11.5px;color:#A6B2B4}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{font-size:12px;padding:3px 8px;border:1px solid rgba(242,234,220,.2);color:#C9D2D2;line-height:1.6}
+.proc-col.hl .chip{border-color:rgba(216,154,62,.4);color:#EBD3A8}
+
+/* ---------- 结构示意图 ---------- */
+.schem{margin:clamp(30px,4vw,48px) 0 0}
+.schem svg{display:block;width:100%;height:auto;background:#0B1418;border:1px solid rgba(242,234,220,.14)}
+.legend{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px 26px;margin:16px 0 0;padding:0;list-style:none}
+.legend li{display:flex;gap:10px;font-size:12.5px;line-height:1.7;color:var(--tx-dim)}
+.legend b{flex:0 0 auto;color:var(--ochre);font-weight:500}
+
+/* ---------- 织法对比 ---------- */
+.compare{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,3vw,32px);margin-top:clamp(24px,3vw,34px)}
+.cmp{background:#0F191E;border:1px solid rgba(242,234,220,.13);padding:clamp(12px,1.8vw,18px)}
+.cmp canvas{display:block;width:100%;aspect-ratio:1;image-rendering:auto}
+.cmp .tag{font-size:11px;letter-spacing:.12em;color:var(--ochre);margin-top:12px}
+.cmp h4{font-family:'Noto Serif SC',serif;font-weight:600;font-size:15.5px;margin:4px 0 6px;color:var(--tx)}
+.cmp p{margin:0;font-size:12.5px;line-height:1.8;color:#95A1A4}
+
+/* ---------- 纹样库 ---------- */
+.pat-wrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(22px,3.4vw,52px);margin-top:34px;align-items:start}
+.pat-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.pat{background:#0F191E;border:1px solid rgba(242,234,220,.14);padding:9px;cursor:pointer;color:inherit;font:inherit;text-align:left;transition:border-color .18s}
+.pat:hover{border-color:rgba(216,154,62,.5)}
+.pat.on{border-color:var(--ochre)}
+.pat canvas{display:block;width:100%;aspect-ratio:1}
+.pat span{display:block;margin-top:7px;font-size:11.5px;letter-spacing:.05em;color:#9FABAE}
+.pat.on span{color:var(--ochre)}
+.pat-info{border-left:1px solid var(--rule);padding-left:clamp(18px,2.4vw,30px)}
+.pat-info h3{font-family:'Noto Serif SC',serif;font-size:clamp(21px,2.6vw,27px);font-weight:700;margin:0 0 4px;color:var(--tx)}
+.pat-info .ph{font-size:11.5px;letter-spacing:.1em;color:var(--ochre);margin:0 0 16px}
+.pat-facts{margin:0;display:grid;gap:12px}
+.pat-facts .row{display:grid;grid-template-columns:54px minmax(0,1fr);gap:14px;align-items:start}
+.pat-facts dt{font-size:11.5px;letter-spacing:.08em;color:var(--ochre);padding-top:3px}
+.pat-facts dd{margin:0;font-size:13.5px;line-height:1.9;color:var(--tx-dim)}
+
+/* ---------- 纹样谱系 ---------- */
+.lineage{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--rule);margin-top:24px}
+.lin{background:var(--paper);padding:20px 22px}
+.band--ink2 .lin{background:var(--ink2)}
+.lin h4{font-family:'Noto Serif SC',serif;font-weight:600;font-size:15.5px;margin:0 0 6px;color:var(--tx)}
+.lin p{margin:0;font-size:12.8px;line-height:1.85;color:var(--tx-dim)}
+
+/* ---------- 配色 ---------- */
+.palette{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;margin-top:24px}
+.sw{border:1px solid rgba(20,28,34,.14)}
+.sw i{display:block;height:76px}
+.sw b{display:block;font-size:12.5px;font-weight:500;margin:10px 0 2px;color:#141D22}
+.sw em{font-style:normal;display:block;font-size:11px;line-height:1.6;color:#66727A}
+
+/* ---------- 人物 ---------- */
+.people{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.6vw,28px);margin-top:34px}
+.person{background:#0F191E;border:1px solid rgba(242,234,220,.14);display:flex;flex-direction:column}
+.person img{width:100%;height:220px;object-fit:cover;display:block;filter:saturate(.92)}
+.person .body{padding:clamp(16px,2vw,22px);display:flex;flex-direction:column;gap:10px;flex:1}
+.person h3{font-family:'Noto Serif SC',serif;font-weight:700;font-size:19px;margin:0;color:var(--paper)}
+.person .role{font-size:11.5px;letter-spacing:.08em;color:var(--ochre);margin:0}
+.person p{font-size:13px;line-height:1.85;color:#9FABAE;margin:0}
+.person .noimg{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;height:220px;padding:0 24px;background:repeating-linear-gradient(135deg,rgba(196,59,46,.09) 0 7px,transparent 7px 15px),repeating-linear-gradient(45deg,rgba(216,154,62,.10) 0 7px,transparent 7px 15px),#0D161A;border-bottom:1px solid rgba(242,234,220,.12)}
+.person .noimg .q{font-family:'Noto Serif SC',serif;font-size:21px;line-height:1.55;color:var(--paper);margin:0}
+.person .noimg .loc{margin-top:12px;font-size:11px;color:#9DA9AB;letter-spacing:.08em}
+
+/* ---------- 对照数据 ---------- */
+.gain{display:grid;grid-template-columns:minmax(0,1fr) 60px minmax(0,1fr);gap:clamp(12px,2vw,24px);align-items:center;margin-top:clamp(26px,3vw,38px)}
+.gain-cell{background:#0F191E;border:1px solid rgba(242,234,220,.14);padding:clamp(18px,2.2vw,26px)}
+.gain-cell .lab{font-size:11px;letter-spacing:.12em;color:#8B989B;margin-bottom:8px}
+.gain-cell b{display:block;font-family:'Noto Serif SC',serif;font-size:clamp(26px,3.4vw,38px);line-height:1.1;color:var(--paper)}
+.gain-cell p{margin:8px 0 0;font-size:12px;line-height:1.7;color:#94A0A3}
+.gain-arrow{text-align:center;font-family:'Noto Serif SC',serif;font-size:20px;color:var(--ochre);letter-spacing:.1em}
+.gain-caveat{margin-top:16px;font-size:12px;line-height:1.8;color:#7E8B8E;border-left:2px solid rgba(216,154,62,.5);padding-left:16px}
+
+/* ---------- 观察 ---------- */
+.judge{display:grid;gap:1px;background:var(--rule);margin-top:36px}
+.jrow{display:grid;grid-template-columns:64px minmax(0,1fr) minmax(0,1fr);gap:0;background:var(--ink)}
+.band--paper .jrow{background:var(--paper)}
+.jrow .jn{display:flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-size:22px;color:var(--ochre);border-right:1px solid var(--rule)}
+.jrow .jf{padding:clamp(16px,2vw,24px);border-right:1px solid var(--rule)}
+.jrow .jp{padding:clamp(16px,2vw,24px)}
+.jrow .lb{font-size:10.5px;letter-spacing:.16em;color:#7E8B8E;margin-bottom:8px}
+.jrow .jf p{margin:0;font-size:12.8px;line-height:1.85;color:var(--tx-dim)}
+.jrow .jp p{margin:0;font-size:14px;line-height:1.9;color:var(--tx)}
+.jrow .jp p b{font-weight:500;color:var(--red)}
+.close{max-width:34em;margin:clamp(34px,4vw,52px) 0 0;font-family:'Noto Serif SC',serif;font-size:clamp(19px,2.4vw,24px);line-height:1.9;color:var(--tx)}
+
+/* ---------- 资料 ---------- */
+.refs{margin-top:28px;padding:0;list-style:none;counter-reset:r}
+.refs li{counter-increment:r;position:relative;padding:13px 0 13px 40px;border-bottom:1px dashed var(--rule);font-size:13px;line-height:1.8;color:var(--tx-dim)}
+.refs li::before{content:counter(r,decimal-leading-zero);position:absolute;left:0;top:13px;font-family:'Noto Serif SC',serif;font-size:12px;color:var(--ochre);letter-spacing:.06em}
+.refs b{display:block;color:var(--tx);font-weight:500;margin-bottom:2px}
+.refs a{color:var(--indigo);text-decoration:none;word-break:break-all;font-size:12px}
+.refs a:hover{text-decoration:underline}
+.notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(18px,2.6vw,32px);margin-top:30px}
+.note p{margin:0 0 10px;font-size:12.8px;line-height:1.9;color:var(--tx-dim)}
+.note h4{font-family:'Noto Serif SC',serif;font-weight:600;font-size:15px;margin:0 0 10px;color:var(--tx)}
+
+@media (max-width:1040px){
+  .proc{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pat-wrap{grid-template-columns:minmax(0,1fr)}
+  .pat-info{border-left:0;border-top:1px solid var(--rule);padding-left:0;padding-top:22px}
+  .legend{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .palette{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .people{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .jrow{grid-template-columns:48px minmax(0,1fr)}
+  .jrow .jp{grid-column:2;border-top:1px solid var(--rule)}
+  .jrow .jf{border-right:0}
+  .notes{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:760px){
+  .proc{grid-template-columns:minmax(0,1fr)}
+  .compare{grid-template-columns:minmax(0,1fr)}
+  .pat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .palette{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .legend{grid-template-columns:minmax(0,1fr)}
+  .people{grid-template-columns:minmax(0,1fr)}
+  .lineage{grid-template-columns:minmax(0,1fr)}
+  .gain{grid-template-columns:minmax(0,1fr);justify-items:stretch}
+  .gain-arrow{display:none}
+  .jrow{grid-template-columns:minmax(0,1fr)}
+  .jrow .jn{display:none}
+  .jrow .jp{grid-column:1}
+  .refs li{padding-left:32px}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#home" data-go="home"><b>经纬未断</b><i>广西壮锦专题</i></a>
+    <nav class="menu">
+      <a href="#home" data-go="home" class="on">首页</a>
+      <a href="#origin" data-go="origin">溯源</a>
+      <a href="#craft" data-go="craft">织造</a>
+      <a href="#pattern" data-go="pattern">纹样</a>
+      <a href="#renew" data-go="renew">新生</a>
+      <a href="#view" data-go="view">观察</a>
+      <a href="#about" data-go="about">资料</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== 视图：首页 ===== -->
+<main class="view on" id="v-home">
+  <section class="hero">
+    <div class="hero-media"><img src="loom-row.jpg" alt="广西壮锦织造车间里，一排竹笼机前坐着的织娘正在提花" fetchpriority="high"></div>
+    <div class="hero-scrim"></div>
+    <div class="hero-in">
+      <div>
+        <div class="hero-label">
+          <em>专题</em><s></s><span>壮族织锦技艺</span><s></s><span>首批国家级非遗 · 2006</span>
+        </div>
+        <h1>经纬未断</h1>
+        <p class="hero-sub">一门千年手艺，在机器、市场与赛场之间，被重新织了三遍。<br><b>它没有死，但它正在变成另一个东西。</b></p>
+      </div>
+      <div class="hero-side">寸锦寸金 —— 一日十厘米</div>
+    </div>
+    <div class="hero-foot">
+      <div class="hero-place">
+        <span>广西 · 靖西 / 宾阳 / 忻城 / 龙州</span>
+        <span>资料截至 2026 年 11 月</span>
+      </div>
+      <div class="weave-strip"></div>
+    </div>
+  </section>
+
+  <div class="band">
+    <div class="inner">
+      <div class="opening">
+        <div class="col">
+          <p class="serif" style="font-size:17px;color:var(--tx)">壮族织锦技艺在 2006 年进入第一批国家级非物质文化遗产名录时，壮锦已经死过一次：上世纪八九十年代，机器织的床单和被面把它赶出了婚嫁的箱底，织娘转行，织机进了仓库。</p>
+          <p>第二次生死发生在最近十年。它被重新“发明”成围巾、包袋、玩偶、鼠标垫和足球，日产量从十厘米跳到二十米，纹样被印上世界杯的授权商品。2026 年 6 月，谭湘光团队的壮锦文创拿到美加墨世界杯大中华区官方授权，媒体称之为“破圈出海”。</p>
+          <p>这当然是好事。但一门手艺被救活，和被理解，不是同一件事。这个专题只想做一件事：把壮锦拆开——拆到经纬、拆到花笼、拆到每一个纹样的来处——再合起来看，它在 2026 年究竟变成了什么。</p>
+        </div>
+        <aside class="quote-card">
+          <p>“使用就是最好的传承。”</p>
+          <span>谭湘光，中国工艺美术大师、广西壮族织锦技艺自治区级代表性传承人</span>
+        </aside>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><b>2006</b><em>壮族织锦技艺列入第一批国家级非遗名录（5 月 20 日）</em></div>
+        <div class="stat"><b>15<small>道</small></b><em>织成一匹壮锦的工序数，最见真章的是“挑花结本”</em></div>
+        <div class="stat"><b>10<small>厘米/日</small></b><em>复杂纹样下，一名熟手一天的全部产量</em></div>
+        <div class="stat"><b>3<small>米</small></b><em>今天能织出的最大门幅，原来只有三十厘米</em></div>
+      </div>
+      <p class="src">口径说明：工序数取龙州金龙一带的说法；靖西壮锦厂的口径为八道主要工序。产量、门幅数据来自新华社、人民网及广西壮族自治区人民政府相关报道，详见「资料」页。</p>
+
+      <div class="entries">
+        <a class="entry" href="#origin" data-go="origin"><i></i><h3>溯源</h3><p>从罗泊湾汉墓的锦片，到《岭外代答》里那句“佳丽厚重”，一条断断续续的线。</p></a>
+        <a class="entry" href="#craft" data-go="craft"><i></i><h3>织造</h3><p>竹笼机是一台竹编的“计算机”，花笼就是它的程序。</p></a>
+        <a class="entry" href="#pattern" data-go="pattern"><i></i><h3>纹样</h3><p>六个骨架，一套配色。凤、蛙、太阳，都长在菱形里。</p></a>
+        <a class="entry" href="#renew" data-go="renew"><i></i><h3>新生</h3><p>三个人，三个厂，一条从村口通向世界杯的路。</p></a>
+        <a class="entry" href="#view" data-go="view"><i></i><h3>观察</h3><p>五个判断，一个提问：谁在替壮锦决定它长什么样。</p></a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ===== 视图：溯源 ===== -->
+<section class="view" id="v-origin">
+  <div class="band band--paper">
+    <div class="inner">
+      <p class="kicker">栏目一 · 溯源</p>
+      <h2 class="title">一条断断续续的线：从汉墓锦片到国家级名录</h2>
+      <p class="lede">壮锦不是从某一天开始的。它是一条被反复接续的线：汉代有织锦的实物，宋代有“锦”的形制，明清进了贡单和嫁妆，二十世纪进了工厂，二十一世纪进了名录。每一段都不是自然延续，而是有人把它接上去的。</p>
+    </div>
+  </div>
+
+  <div class="band">
+    <div class="inner">
+      <div class="tl">
+        <div class="tl-row">
+          <div class="tl-time">汉</div>
+          <div class="tl-axis"><span class="tl-dot"></span></div>
+          <div class="tl-body">
+            <h3>罗泊湾的锦片：远源，不是正传</h3>
+            <p>《后汉书·南蛮传》记岭南先民“织绩木皮，染以草实，好五色衣服”。1970 年代，广西贵县（今贵港）罗泊湾汉墓七号残葬坑出土数块桔红色回纹锦残片，证实汉代广西已有织锦。需要说清楚：这是织锦技艺的远源，与今天意义上的壮锦并非同一种织物。</p>
+            <span class="cite">来源：靖西县文化馆史料辑录；《后汉书·南蛮传》</span>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-time">宋</div>
+          <div class="tl-axis"><span class="tl-dot"></span></div>
+          <div class="tl-body">
+            <h3>“白质方纹”：壮锦第一次成形</h3>
+            <p>南宋周去非《岭外代答》写邕州左右江一带的织品，“白质方纹，广幅大缕，似中都之纹罗，而佳丽厚重，诚南方之上服也”。学界一般认为，真正意义上的壮锦在这一时期形成——注意“方纹”二字，菱形骨架从这时起就是它的语法。</p>
+            <span class="cite">来源：《岭外代答》；广西壮族自治区人民政府非遗专题页</span>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-time">明</div>
+          <div class="tl-axis"><span class="tl-dot"></span></div>
+          <div class="tl-body">
+            <h3>入贡：从峒寨走进朝廷</h3>
+            <p>明万历年间，壮锦远逾千里入朝，织有龙、凤纹样者被列为贡品，达官显贵“莫不争购之”。纹样由此第一次被分出等级：龙凤属于谁，几何属于谁。</p>
+            <span class="cite">来源：广西壮族自治区人民政府《壮族织锦技艺》</span>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-time">清</div>
+          <div class="tl-axis"><span class="tl-dot"></span></div>
+          <div class="tl-body">
+            <h3>嫁妆里的必需品</h3>
+            <p>清乾隆《归顺直隶州志》（今靖西）记：“嫁奁，土锦被面决不可少，以本分从能故也，土锦以柳丝绒为主，配成五色，厚重而耐久。”壮锦在这个阶段不是展品，是生活必需品——这是它最健康的状态。</p>
+            <span class="cite">来源：《归顺直隶州志》；靖西县文化馆史料辑录</span>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-time">1956—1960</div>
+          <div class="tl-axis"><span class="tl-dot"></span></div>
+          <div class="tl-body">
+            <h3>绣织社改称壮锦厂</h3>
+            <p>1956 年，靖西组织成立绣织社；1960 年改称壮锦厂，专门从事壮锦生产与技工培训。手艺第一次被装进“单位”里，师傅变成了职工，产量变成了指标。</p>
+            <span class="cite">来源：广西日报《靖西壮锦厂点燃非遗文化的千年之光》，2023-08</span>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-time">1980s</div>
+          <div class="tl-axis"><span class="tl-dot"></span></div>
+          <div class="tl-body">
+            <h3>鼎盛，然后突然退场</h3>
+            <p>靖西壮锦厂最兴盛时工人八十余人，产品在市场上很受欢迎。随后机器织造的纺织品涌入，背带、被面、床单这些壮锦的老用途一个个失效。厂里织娘转行，坚守者的年龄越来越大。</p>
+            <span class="cite">来源：广西壮族自治区人民政府《文化中国行·我们的非遗》，2024-09</span>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-time">2006</div>
+          <div class="tl-axis"><span class="tl-dot tl-dot--hi"></span></div>
+          <div class="tl-body">
+            <h3>5 月 20 日，进入第一批国家级名录</h3>
+            <p>“壮族织锦技艺”经国务院批准列入第一批国家级非物质文化遗产名录。同年，靖西市壮锦厂成为第一批国家级非遗生产性保护示范基地。保护开始了，但保护的对象是“技艺”，不是“用途”。</p>
+            <span class="cite">来源：中国政府网第一批国家级非遗名录；人民网，2022-06</span>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-time">2018</div>
+          <div class="tl-axis"><span class="tl-dot"></span></div>
+          <div class="tl-body">
+            <h3>龙州金龙：另一条支流被看见</h3>
+            <p>龙州金龙壮族织锦技艺列入自治区级非遗名录。它提示了一件事：壮锦从来不是单点，靖西、宾阳、忻城、龙州各有一套手法与配色，学界称之为“南北两派”。</p>
+            <span class="cite">来源：广西壮族自治区人民政府《广西烟火｜经纬交织铺壮锦》，2025-12</span>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-time">2024—2025</div>
+          <div class="tl-axis"><span class="tl-dot"></span></div>
+          <div class="tl-body">
+            <h3>有了国家标准</h3>
+            <p>2024 年 10 月，壮锦国家标准获批发布，2025 年 5 月 1 日正式实施。一门手艺拥有国标，意味着它开始被当成“产品”来度量：门幅、色差、强力、缩水率。</p>
+            <span class="cite">来源：来宾市人民政府《忻城壮锦》，2026-10</span>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-time">2026</div>
+          <div class="tl-axis"><span class="tl-dot tl-dot--hi"></span></div>
+          <div class="tl-body">
+            <h3>6 月，织进世界杯</h3>
+            <p>谭湘光团队设计的“壮球孃孃”挂件、壮锦足球、壮锦球服获得 2026 美加墨世界杯大中华区官方授权并发布，以蟒龙纹为核心纹样。72 岁的她说：“这一天我等了 55 年。”</p>
+            <span class="cite">来源：人民网《行进中国丨千年壮锦“踢”向世界》，2026-06-09</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="quote">
+        <div class="mark">“</div>
+        <div>
+          <p>邕州左右江峒蛮，有织白𫄨，白质方纹，广幅大缕，似中都之纹罗，而佳丽厚重，诚南方之上服也。</p>
+          <p>——南宋 · 周去非《岭外代答》。这段不足四十字的记载，是壮锦第一次被文字确证：白色的底，方形的纹，幅面宽、线缕粗，比中原的罗更厚重。</p>
+          <cite>引自《岭外代答》，转引自靖西县文化馆史料辑录</cite>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="band band--ink2">
+    <div class="inner">
+      <p class="kicker">两张照片 · 六十年</p>
+      <h2 class="title">同一间厂房，两代人的手</h2>
+      <div class="split">
+        <figure class="figure grayscale">
+          <img src="archive-1960s.jpg" alt="二十世纪六十年代初，靖西壮锦厂的女工在一起交流织锦与配色" loading="lazy">
+          <figcaption>1960 年代初，靖西壮锦厂的女工在交流。照片存于靖西壮锦厂展厅，经广西新闻网刊布。<br>那个年代壮锦的用途是明确的：被面、背带、嫁妆。手艺不需要“传承”，因为它有用。</figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="jingxi-workshop.jpg" alt="靖西壮锦厂织锦车间，数十台织机与织娘" loading="lazy">
+          <figcaption>今天的靖西壮锦厂织锦车间。建于 1956 年的厂子还在织，靠的是“企业＋农户”和研学、旅游。<br>同一间厂房，手艺的用途从“家里要用”变成了“有人想看、有人想买”。</figcaption>
+        </figure>
+      </div>
+      <p class="src">照片来源：靖西壮锦厂展厅旧照（广西新闻网刊布）；织锦车间照片见「资料」页图片来源。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 视图：织造 ===== -->
+<section class="view" id="v-craft">
+  <div class="band band--paper">
+    <div class="inner">
+      <p class="kicker">栏目二 · 织造</p>
+      <h2 class="title">十五道工序，一道都不能跳</h2>
+      <p class="lede">一匹壮锦不是“织”出来的，是“算”出来的。备料与上机决定它能不能织，提花决定它好不好看，成锦只是最后那口气。各地说法不一：龙州金龙一带数出十五道，靖西壮锦厂归纳为八道主要工序——但无论如何拆，中间那道“挑花结本”都绕不过去。</p>
+      <div class="proc">
+        <div class="proc-col">
+          <div class="no">第一段</div>
+          <h3>备料</h3><div class="cnt">六道 · 线与色</div>
+          <div class="chips"><span class="chip">纺线</span><span class="chip">染线</span><span class="chip">浆线</span><span class="chip">卷纱</span><span class="chip">拉纱</span><span class="chip">梳纱</span></div>
+        </div>
+        <div class="proc-col">
+          <div class="no">第二段</div>
+          <h3>上机</h3><div class="cnt">四道 · 让经线各就各位</div>
+          <div class="chips"><span class="chip">牵经</span><span class="chip">整经</span><span class="chip">穿筘</span><span class="chip">穿棕</span></div>
+        </div>
+        <div class="proc-col hl">
+          <div class="no">第三段 · 核心</div>
+          <h3>提花</h3><div class="cnt">二道 · 把图案编成程序</div>
+          <div class="chips"><span class="chip">挑花结本</span><span class="chip">挂花上机</span></div>
+        </div>
+        <div class="proc-col">
+          <div class="no">第四段</div>
+          <h3>成锦</h3><div class="cnt">三道 · 手眼足并用</div>
+          <div class="chips"><span class="chip">走梭</span><span class="chip">打纬</span><span class="chip">落布整理</span></div>
+        </div>
+      </div>
+      <p class="src">工序口径：广西壮族自治区人民政府《广西烟火｜经纬交织铺壮锦》（2025-12）、广西日报（2024-09）。浆线用米汤或粉浆浸润，是为了提高耐磨与抗拉；染线传统用植物与矿物染料，见本页「纹样」栏配色表。</p>
+    </div>
+  </div>
+
+  <div class="band">
+    <div class="inner">
+      <p class="kicker">竹笼机 · 一台竹编的“计算机”</p>
+      <h2 class="title">花笼就是程序，竹条就是代码</h2>
+      <p class="lede">壮锦织机与其他名锦最大的不同，是机上那只巨大的竹编圆笼。织娘先按设计把花纹挑出来，用一条条编花竹和大综线编排在花笼上；织造时按顺序一条条转移编花竹，通过纵线牵引，花纹才在锦面上一行行浮现。<b>程序先于织物存在</b>——这是理解壮锦的关键。</p>
+      <figure class="schem">
+        <svg viewBox="0 0 1000 560" role="img" aria-label="壮锦竹笼机侧面结构示意图">
+          <g stroke="#F2EADC" stroke-opacity=".5" fill="none" stroke-width="4">
+            <line x1="118" y1="74" x2="944" y2="74"/>
+            <line x1="176" y1="74" x2="176" y2="512"/>
+            <line x1="922" y1="74" x2="922" y2="512"/>
+          </g>
+          <g stroke="#F2EADC" stroke-opacity=".3" fill="none" stroke-width="1.5" stroke-dasharray="8 8">
+            <line x1="330" y1="74" x2="392" y2="108"/>
+            <line x1="510" y1="74" x2="452" y2="108"/>
+            <line x1="360" y1="480" x2="430" y2="330"/>
+          </g>
+          <g stroke="#D89A3E" stroke-opacity=".9" fill="none">
+            <ellipse cx="420" cy="158" rx="148" ry="62" stroke-width="2.6"/>
+            <ellipse cx="420" cy="158" rx="116" ry="48" stroke-width="1.3" stroke-opacity=".65"/>
+            <ellipse cx="420" cy="158" rx="84" ry="34" stroke-width="1.3" stroke-opacity=".65"/>
+            <ellipse cx="420" cy="158" rx="52" ry="21" stroke-width="1.3" stroke-opacity=".65"/>
+          </g>
+          <g stroke="#D89A3E" stroke-opacity=".5" stroke-width="1.6">
+            <line x1="420" y1="96" x2="420" y2="220"/>
+            <line x1="442" y1="98" x2="442" y2="218"/>
+            <line x1="464" y1="101" x2="464" y2="215"/>
+            <line x1="486" y1="106" x2="486" y2="210"/>
+            <line x1="508" y1="111" x2="508" y2="205"/>
+            <line x1="530" y1="118" x2="530" y2="198"/>
+            <line x1="552" y1="130" x2="552" y2="186"/>
+            <line x1="398" y1="98" x2="398" y2="218"/>
+            <line x1="376" y1="101" x2="376" y2="215"/>
+            <line x1="354" y1="106" x2="354" y2="210"/>
+            <line x1="332" y1="111" x2="332" y2="205"/>
+            <line x1="310" y1="118" x2="310" y2="198"/>
+            <line x1="288" y1="130" x2="288" y2="186"/>
+          </g>
+          <path d="M200 250 L850 274 L850 316 L200 288 Z" fill="#EFE4CE" fill-opacity=".10" stroke="#EFE4CE" stroke-opacity=".5" stroke-width="1.5"/>
+          <g stroke="#EFE4CE" stroke-opacity=".45" stroke-width="1">
+            <line x1="205" y1="256" x2="846" y2="280"/>
+            <line x1="205" y1="261" x2="846" y2="285"/>
+            <line x1="205" y1="266" x2="846" y2="290"/>
+            <line x1="205" y1="271" x2="846" y2="295"/>
+            <line x1="205" y1="276" x2="846" y2="300"/>
+            <line x1="205" y1="281" x2="846" y2="305"/>
+          </g>
+          <ellipse cx="666" cy="290" rx="40" ry="13" fill="#C43B2E" fill-opacity=".85" stroke="#F2EADC" stroke-opacity=".6" stroke-width="1.5"/>
+          <rect x="846" y="246" width="12" height="74" fill="none" stroke="#3C6E9E" stroke-width="3"/>
+          <rect x="770" y="326" width="150" height="26" rx="13" fill="none" stroke="#F2EADC" stroke-opacity=".55" stroke-width="2"/>
+          <g stroke="#F2EADC" stroke-opacity=".35" stroke-width="1">
+            <line x1="790" y1="332" x2="900" y2="332"/>
+            <line x1="790" y1="338" x2="900" y2="338"/>
+            <line x1="790" y1="344" x2="900" y2="344"/>
+          </g>
+          <rect x="286" y="470" width="152" height="12" fill="none" stroke="#F2EADC" stroke-opacity=".55" stroke-width="2"/>
+          <g fill="#0B1418" stroke="#D89A3E" stroke-width="1.6">
+            <circle cx="420" cy="158" r="14"/><circle cx="240" cy="270" r="14"/><circle cx="666" cy="290" r="14"/>
+            <circle cx="852" cy="238" r="14"/><circle cx="742" cy="339" r="14"/><circle cx="362" cy="476" r="14"/>
+          </g>
+          <g fill="#F2EADC" font-size="13" text-anchor="middle" font-family="Noto Sans SC, sans-serif">
+            <text x="420" y="163">1</text><text x="240" y="275">2</text><text x="666" y="295">3</text>
+            <text x="852" y="243">4</text><text x="742" y="344">5</text><text x="362" y="481">6</text>
+          </g>
+        </svg>
+        <figcaption style="font-size:11.5px;color:#7E8B8E;margin-top:10px;line-height:1.7">侧面示意：按竹笼机织造原理绘制，非等比、非工程图。经线自后梁展开，穿过花笼下的综线，在织口与纬线交织，成锦卷于卷布轴。</figcaption>
+      </figure>
+      <ul class="legend">
+        <li><b>1</b><span>花笼 —— 编花竹按花本顺序排成一圈，是“提花程序”本身</span></li>
+        <li><b>2</b><span>经线 —— 原色棉纱或麻线，贯穿全匹，不改色、不断开</span></li>
+        <li><b>3</b><span>梭 —— 载彩色丝绒（纬线）往复穿过经线</span></li>
+        <li><b>4</b><span>筘与织口 —— 打紧纬线，决定锦面的疏密与平整</span></li>
+        <li><b>5</b><span>卷布轴 —— 织成的一段段卷入轴中</span></li>
+        <li><b>6</b><span>踏板 —— 双脚交替开口，手、眼、足同时工作</span></li>
+      </ul>
+
+      <div class="split">
+        <div>
+          <h3 class="serif" style="font-size:clamp(19px,2.2vw,23px);font-weight:600;margin:0 0 14px">“五上二下、三上四下”：一门靠口诀走的技术</h3>
+          <p class="lede" style="max-width:none">编花笼全凭口诀与空间想象，“一丝乱，全局紊，半点马虎不得”。上百根竹条排满，一个完整的花本才算成型。合起来看，这就是一套需要大脑实时运算的提花程序：织娘在挑起经线的同时，把自己变成了存储器。</p>
+          <p class="lede" style="max-width:none">也正因为如此，壮锦的难度不在“手快”，而在“记准”。一个花本编错一根竹条，整匹布的纹样就会错位——而错位在一米之外是看不出来的，要等到整匹落布才发现。所谓“寸锦寸金”，金不在材料，在这份不能返工的注意力。</p>
+          <p class="src">引文与工序描述来源：广西壮族自治区人民政府《广西烟火｜经纬交织铺壮锦》，2025-12-15。</p>
+        </div>
+        <figure class="figure">
+          <img src="loom-close.jpg" alt="壮锦竹笼机特写，巨大的竹编花笼与垂下的白色经线" loading="lazy">
+          <figcaption>竹笼机上的花笼。编花竹排成的“程序”挂在上方，经线如瀑垂下——这是壮锦最容易辨认的一帧画面。<br>照片：媒体公开报道图片，见「资料」页。</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="band band--ink2">
+    <div class="inner">
+      <p class="kicker">一个字的差别</p>
+      <h2 class="title">通经，断纬：壮锦的全部颜色都藏在这四个字里</h2>
+      <p class="lede">经线自始至终不断、不换色；纬线则随纹样换梭，换一次色就剪断一次。<b>“断”的是纬线，不是耐心</b>。色块的边界就是断纬的位置，所以壮锦的图案边界清晰、正反分明——这是它看起来“像织出来的画”的原因。</p>
+      <div class="compare">
+        <div class="cmp">
+          <span class="tag">织法 A</span>
+          <canvas class="motif-cmp" data-mode="plain" width="640" height="640" aria-label="通经通纬织法示意图"></canvas>
+          <h4>通经通纬</h4>
+          <p>经纬各守一色，织出的是单色或素雅纹样。快，适合做边饰与日常用布。熟练织娘织一条这样的围巾，十余日仍不足一米。</p>
+        </div>
+        <div class="cmp">
+          <span class="tag">织法 B</span>
+          <canvas class="motif-cmp" data-mode="cut" width="640" height="640" aria-label="通经断纬织法示意图"></canvas>
+          <h4>通经断纬</h4>
+          <p>纬线随纹易色，一纹一断。熟手织简单纹样一日最多三十厘米，遇上繁复图式，终日劳作或仅得十厘米——彩色壮锦的核心技法。</p>
+        </div>
+      </div>
+      <p class="src">对比图为按两种织法逻辑重绘的示意图，用于说明色彩组织的差别，非实物扫描。数据来源：广西壮族自治区人民政府，2025-12。</p>
+
+      <div class="stats">
+        <div class="stat"><b>3<small>天/米</small></b><em>简单纹样，熟练织娘的速度（靖西口径）</em></div>
+        <div class="stat"><b>10<small>厘米/日</small></b><em>复杂纹样，一天的全部产量</em></div>
+        <div class="stat"><b>30<small>厘米/日</small></b><em>断纬织法的上限（龙州口径）</em></div>
+        <div class="stat"><b>200<small>倍</small></b><em>机械织造与手工单日产量的差距（约）</em></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="band band--paper">
+    <div class="inner">
+      <p class="kicker">尺幅的解放</p>
+      <h2 class="title">从三十厘米到三米：一次把织机“撑开”的改革</h2>
+      <p class="lede">传统壮锦宽幅只有三十厘米左右，长期伏在织机前的手工艺人容易患腰椎病，窄幅也限制了产品类型——做得了背带和被面，做不了衣服和包。谭湘光的做法很直接：改织机。宽幅先扩到四十五厘米，再扩到三米以上；同时引入机械织造，把日产量从十厘米提到二十米。</p>
+      <div class="gain">
+        <div class="gain-cell"><div class="lab">传统手工</div><b>0.3 米</b><p>门幅，只能做背带、被面、头巾</p></div>
+        <div class="gain-arrow">→</div>
+        <div class="gain-cell"><div class="lab">改造后</div><b>3 米以上</b><p>门幅，可裁衣、可做包、可做整幅装饰画</p></div>
+      </div>
+      <div class="gain">
+        <div class="gain-cell"><div class="lab">手工织造</div><b>10 厘米 / 日</b><p>复杂纹样下的单日产量</p></div>
+        <div class="gain-arrow">→</div>
+        <div class="gain-cell"><div class="lab">机械织造</div><b>20 米 / 日</b><p>单日产量，约合手工的两百倍</p></div>
+      </div>
+      <p class="gain-caveat">需要分清的是：机械能复制“图案”，复制不了“挑花结本”这一层心智劳动；机织与手织在浮长线、厚度、手感上也不是同一种产品。产量提升解决的是“活下去”，不是“织得更好”——这个区别，是理解后面所有争议的前提。</p>
+      <p class="src">数据来源：新华网（2024-06）、人民网（2026-06）、南宁市人民政府（2026-06）。不同报道对初始门幅的表述有 30 厘米、45 厘米、60 厘米等差异，本页取 30 厘米口径并注明，详见「资料」页存疑清单。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 视图：纹样 ===== -->
+<section class="view" id="v-pattern">
+  <div class="band">
+    <div class="inner">
+      <p class="kicker">栏目三 · 纹样</p>
+      <h2 class="title">六个骨架，一套语法</h2>
+      <p class="lede">壮锦的纹样看起来繁密，其实极有纪律：几乎一切都长在菱形骨架上，用直角与 45° 斜线说话，因为织机只会走这两种方向。<b>限制生出了风格</b>——曲线在这里没有位置，水波只能做成阶梯，凤的翅膀只能折成直角。点击左侧任一骨架，看它的来历与织法。</p>
+      <div class="pat-wrap">
+        <div class="pat-grid" id="patGrid">
+          <button class="pat on" data-pat="0"><canvas class="motif-pat" data-pat="0" width="640" height="640"></canvas><span>菱格花窗</span></button>
+          <button class="pat" data-pat="1"><canvas class="motif-pat" data-pat="1" width="640" height="640"></canvas><span>回纹</span></button>
+          <button class="pat" data-pat="2"><canvas class="motif-pat" data-pat="2" width="640" height="640"></canvas><span>水波纹</span></button>
+          <button class="pat" data-pat="3"><canvas class="motif-pat" data-pat="3" width="640" height="640"></canvas><span>太阳花纹</span></button>
+          <button class="pat" data-pat="4"><canvas class="motif-pat" data-pat="4" width="640" height="640"></canvas><span>盘长纹</span></button>
+          <button class="pat" data-pat="5"><canvas class="motif-pat" data-pat="5" width="640" height="640"></canvas><span>锯齿边饰</span></button>
+        </div>
+        <div class="pat-info" id="patInfo">
+          <h3>菱格花窗</h3>
+          <p class="ph">几何纹 · 骨架</p>
+          <dl class="pat-facts">
+            <div class="row"><dt>骨架</dt><dd>以菱格为基本单元，内外套叠、四角相接，连成不封边的网格。</dd></div>
+            <div class="row"><dt>寓意</dt><dd>菱形在壮族织造里不只是几何，也像一块“田”。稻作民族的田块形状，直接进入了纹样。</dd></div>
+          </dl>
+        </div>
+      </div>
+      <p class="src">六个骨架为按传统结构重绘的示意图（逐格对应经线与纬线的交织关系），用于说明骨架逻辑，不代表任何一件具体藏品。真实纹样的线密度远高于此。</p>
+    </div>
+  </div>
+
+  <div class="band band--ink2">
+    <div class="inner">
+      <p class="kicker">纹样谱系 · 动植物</p>
+      <h2 class="title">凤、蛙、花：那些被织进几何里的活物</h2>
+      <p class="lede">几何纹是骨架，动植物纹是血肉。壮锦的第二种构图式样就是“几何为底、上饰动植物”，形成有浮雕感的复合图形。这些活物都不是写生，而是被几何化、图案化之后才允许上机。</p>
+      <div class="lineage">
+        <div class="lin"><h4>凤纹</h4><p>民间有“十件壮锦九件凤，活似凤从锦中出”之说。凤在壮族心里是吉祥、美好、幸福的象征，造型与鸡纹相近而更夸张，翅膀与尾羽一律折成直角与阶梯。</p></div>
+        <div class="lin"><h4>蛙纹</h4><p>青蛙是壮族的祥瑞灵物。红水河流域至今流行春节期间祭蛙的“蚂拐节”，祈风调雨顺、五谷丰登、人丁兴旺。织蛙纹，是把一场仪式压缩进一个方格。</p></div>
+        <div class="lin"><h4>蟒龙纹</h4><p>龙的造型有团龙、双龙戏珠、对龙、盘龙等多种。2026 年世界杯授权产品即以蟒龙纹为核心纹样——最传统的权力符号，被用在了最现代的赛事商品上。</p></div>
+        <div class="lin"><h4>蝶恋花 · 凤穿牡丹</h4><p>“蝶”与“耋”同音，寓长寿；“凤穿牡丹”寓富贵。这类复合图案通常在几何底纹上再加一层，考的是花本编排的层级能力。</p></div>
+      </div>
+      <figure class="figure" style="margin-top:clamp(28px,3.4vw,44px)">
+        <img src="weave-detail.jpg" alt="壮锦织物局部特写，密排的几何纹与彩色纬线" loading="lazy">
+        <figcaption>壮锦局部：每一小块颜色都是一次断纬换梭的结果。放大之后能看到纬浮长线在正面形成的长度差——纹样的“笔触”其实是线的长度。</figcaption>
+      </figure>
+      <p class="src">纹样释义来源：抖音百科「壮锦」词条、来宾市人民政府《忻城壮锦》、广西社会主义学院相关论文；照片见「资料」页。</p>
+    </div>
+  </div>
+
+  <div class="band band--paper">
+    <div class="inner">
+      <p class="kicker">构图 · 配色</p>
+      <h2 class="title">三种构图，六种颜色：一套可以被复述的规则</h2>
+      <p class="lede">壮锦的图案构成大致三种：一是平纹上织二方连续与四方连续的几何纹，连绵而朴素；二是几何为底、上饰动植物，形成多层次复合图形；三是多种几何纹大小结合、方圆穿插，编成繁密而有韵律的复合图案。颜色则讲究“以少见多”——纯朴中见丰富，素雅中见多彩。</p>
+      <div class="palette">
+        <div class="sw"><i style="background:#C43B2E"></i><b>苏木红</b><em>苏木芯、土朱<br>壮锦最常用的底色</em></div>
+        <div class="sw"><i style="background:#D89A3E"></i><b>姜黄</b><em>姜黄、黄栀子、黄泥<br>提亮，也做金线的替身</em></div>
+        <div class="sw"><i style="background:#3C6E9E"></i><b>蓝靛</b><em>板蓝根茎叶发酵<br>冷色的锚点</em></div>
+        <div class="sw"><i style="background:#5C8050"></i><b>藤绿</b><em>草木灰与藤皮套染<br>压住红黄的燥</em></div>
+        <div class="sw"><i style="background:#1B2429"></i><b>枫叶黑</b><em>枫叶、薯莨<br>地色，让彩色跳出来</em></div>
+        <div class="sw"><i style="background:#EFE4CE"></i><b>棉白</b><em>原色棉纱，不染<br>经线的本色</em></div>
+      </div>
+      <p class="src">染料来源：南方周末《九百织娘一织郎》（2024）、广西文化和旅游厅相关图文。各地配方不同，忻城、靖西、宾阳、龙州各有偏色，此处只列常见者，不作配方依据。</p>
+      <div class="split">
+        <div>
+          <h3 class="serif" style="font-size:clamp(18px,2vw,22px);font-weight:600;margin:0 0 12px">红配绿，为什么在壮锦里不“土”</h3>
+          <p class="lede" style="max-width:none">壮锦的配色逻辑不是“和谐”，是“对比”：以黑或白为地，红、黄、蓝、绿直接撞上去，靠面积与位置调和。今天的设计师把它换成莫兰迪色系，视觉上更“高级”，但也抽掉了一层东西——那种在田间、在节庆里被看得见的响亮。</p>
+        </div>
+        <figure class="figure">
+          <img src="pattern-red.jpg" alt="红白黑三色的壮锦二方连续纹样，阶梯状锯齿" loading="lazy">
+          <figcaption>典型的高对比配色：红、黑、白三色，二方连续的阶梯纹。这种“硬”，是织机直角带来的，也是节庆需要的。</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 视图：新生 ===== -->
+<section class="view" id="v-renew">
+  <div class="band band--paper">
+    <div class="inner">
+      <p class="kicker">栏目四 · 新生</p>
+      <h2 class="title">三个人，一条从村口通向赛场的路</h2>
+      <p class="lede">壮锦的“复活”不是抽象的。它由具体的人一寸一寸推进：一个把织机撑开到三米，一个把厂子从倒闭边缘拉回来，一个在边境村屯把口诀教给下一代。三个人分处宾阳、靖西、龙州，做的其实是同一件事——把手艺重新接回生活。</p>
+      <div class="people">
+        <article class="person">
+          <img src="tan-studio.jpg" alt="谭湘光在工作室查看壮锦产品" loading="lazy">
+          <div class="body">
+            <p class="role">中国工艺美术大师 · 中国织锦工艺大师</p>
+            <h3>谭湘光</h3>
+            <p>1970 年，16 岁的她拜邻居梁树英为师，此后五十余年只和壮锦打交道。曾任宾阳县民族织锦厂厂长，2002 年创办湘光织锦坊。</p>
+            <p>她做了两件“离经叛道”的事：把门幅从三十厘米做到三米以上，把日产量从十厘米做到二十米；把壮锦的浓烈配色改成莫兰迪色系，让布料变薄变软。她的原话是“使用就是最好的传承”。</p>
+          </div>
+        </article>
+        <article class="person">
+          <img src="licunling.jpg" alt="李村灵在靖西壮锦厂的织机前操作" loading="lazy">
+          <div class="body">
+            <p class="role">国家级传承人 · 靖西市壮锦厂厂长</p>
+            <h3>李村灵</h3>
+            <p>1987 年进厂，从普通织女做到第四任厂长，见证了厂子八十多人的鼎盛，也见过织娘一个个转行。</p>
+            <p>她把厂子做成“企业＋农户”：农闲时妇女在家织，厂里统一收。壮锦厂、壮族博物馆这些基地每年接待游客一百万人次以上，壮锦绣球、龙宝布偶、包包是最好卖的三样。</p>
+          </div>
+        </article>
+        <article class="person">
+          <div class="noimg"><span class="q">“五上二下，<br>三上四下。”</span><span class="loc">龙州 · 金龙镇 · 板池屯工坊　公开报道未附肖像</span></div>
+          <div class="body">
+            <p class="role">织锦工坊负责人 · 自治区级非遗项目点</p>
+            <h3>李东梅</h3>
+            <p>在壮锦的重要发源地之一板池屯，她守着一间工坊，边织边教。“五上二下、三上四下”，口诀声落，挑花尺在经纬间起落；竹笼上排满百根竹条，一个完整的花本才算成型。</p>
+            <p>她那条用通经通纬织法的围巾，织了十余日仍不足一米——这是这门手艺今天最诚实的速度。</p>
+          </div>
+        </article>
+      </div>
+      <p class="src">人物信息与引文来源：新华网（2024-06）、人民网（2022-06 / 2026-06）、广西壮族自治区人民政府（2024-09 / 2025-12）、广西日报（2023-08）。各人年龄、职务随时间变动，本页取 2026 年公开报道口径。</p>
+    </div>
+  </div>
+
+  <div class="band band--ink2">
+    <div class="inner">
+      <p class="kicker">产业的一侧</p>
+      <h2 class="title">四个数字，看清“指尖技艺”变成了什么</h2>
+      <div class="stats">
+        <div class="stat"><b>25<small>个</small></b><em>全区“八桂巧娘”非遗传承工作坊</em></div>
+        <div class="stat"><b>10<small>万名+</small></b><em>辐射带动的妇女，在家门口接单</em></div>
+        <div class="stat"><b>500<small>名+</small></b><em>靖西壮锦厂每年带动的妇女就业</em></div>
+        <div class="stat"><b>100<small>万人次+</small></b><em>靖西非遗基地年接待游客</em></div>
+      </div>
+      <p class="src">来源：人民网（2026-06）、广西日报（2023-08）。“辐射带动”含培训、订单外包与居家代工等不同形式，不等于稳定就业，阅读时需注意口径。</p>
+    </div>
+  </div>
+
+  <div class="band">
+    <div class="inner">
+      <p class="kicker">案例 · 2026 年 6 月</p>
+      <h2 class="title">把蟒龙纹织进球衣：一次拿到授权的“破圈”</h2>
+      <div class="split">
+        <figure class="figure">
+          <img src="worldcup-craft.jpg" alt="谭湘光工作室的织娘正在制作壮锦足球与壮球孃孃挂件" loading="lazy">
+          <figcaption>2026 年 5 月，谭湘光工作室的织娘在制作世界杯授权文创。桌上铺着印有赛事标识的壮锦纹样桌垫，织娘手里是小小的壮锦足球。<br>照片：广西云客户端。</figcaption>
+        </figure>
+        <div>
+          <p class="lede" style="max-width:none">6 月 8 日，中国工艺美术大师谭湘光团队正式发布获得 2026 美加墨世界杯大中华区官方授权的系列产品：“壮球孃孃”挂件、壮锦足球、壮锦球服。核心纹样选的是壮锦最具代表性的蟒龙纹，配色则换成了更贴合当下审美的柔和色系。</p>
+          <p class="lede" style="max-width:none">原创 IP“壮球孃孃”以壮族吉祥饰物麽乜为原型，把“壮族妈妈”怀里的太阳换成了一颗足球，寓意有“球”必“赢”。授权审核从创意构思、试样打版、资质核验一路卡到面料配色与成品包装，每一处都要对标国际足联的要求。</p>
+          <p class="lede" style="max-width:none">更关键的一句话藏在报道里：订单被交回乡村织娘手中，项目依托世界杯订单启动千名村民帮扶计划，被称为“非遗＋体育 IP＋乡村就业”的新路径。也就是说，这场“破圈”落到生产端，是一次把手织产能重新接进全球供应链的实验。</p>
+          <p class="src">来源：人民网《行进中国丨千年壮锦“踢”向世界》（2026-06-09）、南宁市人民政府《一梭经纬织古韵 千年壮锦耀世界》（2026-06-17）。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 视图：观察 ===== -->
+<section class="view" id="v-view">
+  <div class="band band--paper">
+    <div class="inner">
+      <p class="kicker">栏目五 · 观察</p>
+      <h2 class="title">五个判断：当壮锦变成商品，我们到底在保护什么</h2>
+      <p class="lede">以下每一行都分成两半：左边是查得到出处的事实，右边是本站的判断。事实可以核对，判断可以被反驳——这正是一个专题该给出的东西。</p>
+    </div>
+  </div>
+  <div class="band">
+    <div class="inner">
+      <div class="judge">
+        <div class="jrow">
+          <div class="jn">01</div>
+          <div class="jf"><div class="lb">事实</div><p>机械织造把日产量从十厘米提到二十米，门幅从三十厘米扩到三米以上；同时，挑花结本仍只能由人完成，一个花本要排满上百根竹条。</p></div>
+          <div class="jp"><div class="lb">判断</div><p>机械化救活的是“布”，不是“技”。产量与门幅解决的是能不能接单，<b>而手艺的核心——那套把图案编成程序的脑力劳动——并没有被机器保存</b>，它被集中到了少数传承人和设计部门手里。壮锦的“非遗价值”因此正在从“织造技艺”向“纹样 IP”迁移，这是最值得警惕的一次重心转移。</p></div>
+        </div>
+        <div class="jrow">
+          <div class="jn">02</div>
+          <div class="jf"><div class="lb">事实</div><p>2026 年世界杯授权产品“摒弃传统浓烈配色，改用柔和雅致的莫兰迪色系”，并“将厚重布料改良得轻薄舒适”。</p></div>
+          <div class="jp"><div class="lb">判断</div><p>配色可以被市场重新校准，这不算错——但要守住底线：<b>菱形骨架、阶梯折线、断纬形成的硬边界</b>，这三样是壮锦的身份证。如果连它们也被抹平，剩下的只是“民族风”三个字，任何一个设计师都可以贴上。判断一门非遗是否还在，不看它卖了多少，看它有没有不能被替换的语法。</p></div>
+        </div>
+        <div class="jrow">
+          <div class="jn">03</div>
+          <div class="jf"><div class="lb">事实</div><p>蛙纹关联着红水河流域的蚂拐节与稻作祈雨；太阳纹源自稻作民族的太阳崇拜；麽乜是护佑孩童的吉祥饰物。</p></div>
+          <div class="jp"><div class="lb">判断</div><p>符号要活下去，先要被使用，再被重新解释——这是所有活态非遗的必经之路，不必哀悼。真正的风险不在“变浅”，<b>在解释权交给了算法与爆款</b>：当蛙纹被当成“可爱的小图形”批量印在鼠标垫上，没有人再知道它曾经是一场求雨的仪式，它就真的死了，只是尸体很好看。</p></div>
+        </div>
+        <div class="jrow">
+          <div class="jn">04</div>
+          <div class="jf"><div class="lb">事实</div><p>“八桂巧娘”已建成 25 个非遗传承工作坊，辐射带动超 10 万名妇女；受访织娘称月收入可达四五千元；订单主要来自赛事授权、展会与旅游渠道。</p></div>
+          <div class="jp"><div class="lb">判断</div><p>非遗的就业红利，落点在最柔软的一环：居家、计件、按单结算。<b>如果没有稳定订单与技能溢价，这种“指尖经济”会退化成低薪手工外包</b>——妇女获得的是收入，不是议价能力。要让它成为真正的事业，需要的是长期采购合同、可追溯的工价，而不只是一次赛事的爆发。</p></div>
+        </div>
+        <div class="jrow">
+          <div class="jn">05</div>
+          <div class="jf"><div class="lb">事实</div><p>世界杯授权产品的商业生命周期与赛事周期高度绑定；同期，壮锦还出现在消博会等展台，一款包袋现场卖断货；壮锦国家标准于 2025 年 5 月 1 日实施。</p></div>
+          <div class="jp"><div class="lb">判断</div><p>赛事是入口，不是归宿。2026 年之后，真正的考验只有一个：<b>订单还能不能留在村里的织机上</b>。国家标准给了产业一把尺子，但尺子量的是门幅、色差与强力，量不出一匹锦里有多少人的时间。这两件事必须同时成立，壮锦才算真的活了。</p></div>
+        </div>
+      </div>
+      <p class="close">所以问题并不是“壮锦能不能活下去”——它已经活了。问题是：<span style="color:var(--red)">谁在替它决定它长什么样。</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 视图：资料 ===== -->
+<section class="view" id="v-about">
+  <div class="band band--paper">
+    <div class="inner">
+      <p class="kicker">栏目六 · 资料</p>
+      <h2 class="title">来源、口径与存疑</h2>
+      <p class="lede">本站所有事实性陈述均可回溯至下列公开报道、政府网站或论文。凡属本站判断的部分，已在「观察」栏以“判断”单列，不与事实混排。</p>
+      <ol class="refs">
+        <li><b>广西壮族自治区人民政府《文化中国行·我们的非遗｜千年壮锦绽放时代芳华》</b>2024-09-09。靖西壮锦厂沿革、八道工序、织娘产量、李村灵访谈。<a href="http://www.gxzf.gov.cn/html/mlgxi/gxrw_192475/whzgxgx/fygx/t18951242.shtml" target="_blank" rel="noopener">gxzf.gov.cn</a></li>
+        <li><b>广西壮族自治区人民政府《广西烟火｜经纬交织铺壮锦》</b>2025-12-15。龙州板池屯、十五道工序、挑花结本口诀、通经通纬与断纬的速度。<a href="http://www.gxzf.gov.cn/zt/jd/2025gxlyn_228598/sydt/t26784607.shtml" target="_blank" rel="noopener">gxzf.gov.cn</a></li>
+        <li><b>广西壮族自治区人民政府《壮族织锦技艺》非遗专题页</b>2023-10-11。三大种类、二十多个品种、五十多种图案、竹笼机结构与 2006 年名录信息。<a href="http://www.gxzf.gov.cn/html/mlgxi/gxrw_192475/zrdl/t17261670.shtml" target="_blank" rel="noopener">gxzf.gov.cn</a></li>
+        <li><b>新华网《广西壮锦：五彩经纬创新传承织就千年之美》</b>2024-06-06。谭湘光学艺经历、门幅改革、机械化产量、校企合作。<a href="http://gx.xinhuanet.com/20240606/7392895768a54d95a18a7af42f143190/c.html" target="_blank" rel="noopener">新华网广西频道</a></li>
+        <li><b>人民网《行进中国丨千年壮锦“踢”向世界》</b>2026-06-09。世界杯大中华区官方授权、蟒龙纹、壮球孃孃 IP、千名村民帮扶计划。<a href="http://gx.people.com.cn/n2/2026/0609/c179464-41605339.html" target="_blank" rel="noopener">人民网广西频道</a></li>
+        <li><b>人民网·中国共产党新闻网《壮锦有了“新时尚” 一针一线新生活》</b>2022-06-19。生产性保护示范基地、“企业＋农户”模式、谭湘光在民族博物馆的演示。<a href="http://cpc.people.com.cn/n1/2022/0619/c64387-32450263.html" target="_blank" rel="noopener">人民网</a></li>
+        <li><b>南宁市人民政府《一梭经纬织古韵 千年壮锦耀世界》</b>2026-06-17。世界杯授权产品选色与面料改良、消博会、产业集群表述。<a href="https://www.nanning.gov.cn/zjnn/mswh/t6664493.html" target="_blank" rel="noopener">nanning.gov.cn</a></li>
+        <li><b>来宾市人民政府《忻城壮锦》</b>2026-10-28。忻城源流、纹样分类、“十件壮锦九件凤”、壮锦国家标准发布与实施时间。<a href="http://www.laibin.gov.cn/ztzl/rdzt/lbdq/t28271401.shtml" target="_blank" rel="noopener">laibin.gov.cn</a></li>
+        <li><b>广西日报《靖西壮锦厂点燃非遗文化的千年之光》</b>2023-08-18。1956 年绣织社、1960 年改称壮锦厂、每年带动 500 多名妇女就业、年接待游客量。<a href="https://apph5.cloudgx.cn/article/sync1692543818930753536" target="_blank" rel="noopener">广西云客户端</a></li>
+        <li><b>南方周末《九百织娘一织郎，非遗壮锦引领时代新风》</b>植物染色（姜黄、板蓝、枫叶、薯莨、苏木）与合作社模式。<a href="https://culture.southcn.com/node_aef4c5b3f8/121a84d0a1.shtml" target="_blank" rel="noopener">南方网文化频道</a></li>
+        <li><b>《广西壮锦织锦技术研究》</b>靖西与宾阳“南北两派”织机与织物技术参数比较，含经密、纬密、浮长、幅宽等实测数据。<a href="http://www.shturl.cc/f369d105a9df34920aa38ca29903de441" target="_blank" rel="noopener">论文摘要页</a></li>
+        <li><b>《岭外代答》（南宋·周去非）、《归顺直隶州志》（清乾隆）、《后汉书·南蛮传》</b>古籍引文，转引自靖西县文化馆史料辑录。用于溯源栏，不作数据依据。</li>
+      </ol>
+
+      <div class="notes">
+        <div class="note">
+          <h4>存疑清单（不确定的地方如实标注）</h4>
+          <p><b>门幅口径不一。</b>有报道称壮锦原宽 30 厘米、谭湘光扩至 45 厘米再至 3 米；也有报道称改造后从 60 厘米提至 120 厘米。本站取 30 厘米口径并注明，未做统一。</p>
+          <p><b>机械日产量 20 米</b>的统计前提（门幅、纹样复杂度、是否含停机换色）未见说明，只能作为量级参考。</p>
+          <p><b>月收入四五千元</b>来自单一位受访织娘的表述，不是统计均值。</p>
+          <p><b>壮锦国家标准的条款细节</b>未见全文公开，本站只引用“获批发布／实施时间”。</p>
+        </div>
+        <div class="note">
+          <h4>制作说明</h4>
+          <p>本站为课程专题作业，静态单页网站（单文件 HTML ＋ 本地图片），用页内哈希路由切换六个栏目，无后端、无数据接口。</p>
+          <p><b>纹样图为重绘示意。</b>六个骨架按壮锦的织造逻辑逐格生成（每个单元格对应一个经纬交织点），用于解释结构，不冒充实物扫描，也不对应任何具体藏品。</p>
+          <p>竹笼机为结构示意图，非等比、非工程图。数据截至 2026 年 11 月 18 日。</p>
+          <p>图片来源：新华网、人民网、广西云客户端、广西新闻网、靖西壮锦厂展厅、当代广西网及公开图片；仅用于非商业的课程作业，版权归原摄影者与媒体所有。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="band band--ink2" style="border-top:1px solid rgba(242,234,220,.16);padding-top:34px;padding-bottom:34px">
+  <div class="inner">
+    <div class="weave-strip" style="margin-bottom:22px"></div>
+    <div style="display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:baseline">
+      <div>
+        <p class="serif" style="margin:0 0 6px;font-size:18px;letter-spacing:.1em">经纬未断 · 广西壮锦专题</p>
+        <p style="margin:0;font-size:12px;color:#7E8B8E">六个栏目：溯源 / 织造 / 纹样 / 新生 / 观察 / 资料　·　2026 年 11 月</p>
+      </div>
+      <p style="margin:0;font-size:12px;color:#7E8B8E;max-width:26em;line-height:1.8">课程作业用，非商业用途。文中事实均标注来源，判断部分以“判断”单列。</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ---------- 纹样生成与绘制 ---------- */
+var PAL = {g:'#16222A',a:'#C43B2E',b:'#D89A3E',c:'#3C6E9E',d:'#5C8050',e:'#EFE4CE'};
+
+function gridOf(n, fill){
+  var g = [], y, x, r;
+  for(y=0;y<n;y++){ r=[]; for(x=0;x<n;x++){ r.push(fill); } g.push(r); }
+  return g;
+}
+
+function mDiamond(n){
+  var g = gridOf(n,'g'), c = (n-1)/2, y, x, d, m;
+  for(y=0;y<n;y++){ for(x=0;x<n;x++){
+    d = Math.round(Math.abs(x-c) + Math.abs(y-c)); m = d % 9;
+    g[y][x] = (m===0) ? 'a' : (m===1) ? 'b' : (m===5) ? 'd' : (m===4) ? 'c' : (m===7) ? 'e' : 'g';
+  }}
+  return g;
+}
+
+function mMeander(n){
+  var g = gridOf(n,'g'), S = 8, bx, by, x, y, m, yy, xx;
+  for(by=0;by<n;by+=S){ for(bx=0;bx<n;bx+=S){
+    for(y=0;y<S;y++){ for(x=0;x<S;x++){
+      yy = by+y; xx = bx+x;
+      if(!g[yy] || g[yy][xx] === undefined){ continue; }
+      m = Math.max(Math.abs(x-3.5), Math.abs(y-3.5));
+      if(m < 0.9){ g[yy][xx] = 'a'; }
+      else if(m > 2.2 && m < 2.8){ g[yy][xx] = 'c'; }
+      else if(m > 3.2){ g[yy][xx] = 'b'; }
+    }}
+  }}
+  return g;
+}
+
+function mWave(n){
+  var g = gridOf(n,'g'), y, x, v, r, yy;
+  for(y=0;y<n;y++){ for(x=0;x<n;x++){
+    v = x % 8; r = v < 4 ? v : 7 - v; yy = y % 8;
+    g[y][x] = (yy === r) ? 'a' : (yy === ((r+4)%8)) ? 'c' : (yy === ((r+1)%8)) ? 'b' : 'g';
+  }}
+  return g;
+}
+
+function mSun(n){
+  var g = gridOf(n,'g'), c = (n-1)/2, y, x, dx, dy, rr, ang, edge;
+  for(y=0;y<n;y++){ for(x=0;x<n;x++){
+    dx = x-c; dy = y-c; rr = Math.sqrt(dx*dx + dy*dy); ang = Math.atan2(dy,dx);
+    edge = 3.4 + 3.8 * Math.abs(Math.cos(ang*4));
+    if(rr < 2.1){ g[y][x] = 'a'; }
+    else if(rr < 3.2){ g[y][x] = 'e'; }
+    else if(Math.abs(rr - edge) < 0.85){ g[y][x] = 'b'; }
+    else if(Math.abs(rr - (edge + 8.6)) < 0.6){ g[y][x] = 'c'; }
+    else if(Math.abs(rr - (edge + 11.4)) < 0.5){ g[y][x] = 'd'; }
+  }}
+  return g;
+}
+
+function mKnot(n){
+  var g = gridOf(n,'g'), y, x, a, b;
+  for(y=0;y<n;y++){ for(x=0;x<n;x++){
+    a = (x + y) % 8; b = ((x - y) % 8 + 8) % 8;
+    if(a === 0 || b === 0){ g[y][x] = 'a'; }
+    else if(a === 1 || b === 1){ g[y][x] = 'b'; }
+    else if(a === 4 && b === 4){ g[y][x] = 'c'; }
+  }}
+  return g;
+}
+
+function mTeeth(n){
+  var g = gridOf(n,'g'), y, x, ph, half, yb;
+  for(y=0;y<n;y++){ for(x=0;x<n;x++){
+    ph = x % 8; half = ph < 4 ? ph : 7 - ph; yb = y % 8;
+    if(yb < half + 1){ g[y][x] = 'a'; }
+    else if(yb < half + 3){ g[y][x] = 'b'; }
+    else if(yb >= 8 - half){ g[y][x] = 'c'; }
+  }}
+  return g;
+}
+
+function paint(canvas, cells, mode){
+  var n = cells.length, px = canvas.width, cs = px / n;
+  var ctx = canvas.getContext('2d'), y, x, ch;
+  ctx.clearRect(0, 0, px, px);
+  for(y=0;y<n;y++){ for(x=0;x<n;x++){
+    ch = cells[y][x];
+    if(mode === 'plain' && ch !== 'g'){ ch = 'a'; }
+    ctx.fillStyle = PAL[ch] || PAL.g;
+    ctx.fillRect(Math.floor(x*cs), Math.floor(y*cs), Math.ceil(cs)+1, Math.ceil(cs)+1);
+  }}
+  /* 织物质感：纬向明暗 + 经线细缝 */
+  for(y=0;y<n;y++){
+    ctx.fillStyle = (y % 2) ? 'rgba(0,0,0,.15)' : 'rgba(255,255,255,.05)';
+    ctx.fillRect(0, Math.floor(y*cs), px, Math.max(1, cs*0.42));
+  }
+  for(x=0;x<n;x++){
+    ctx.fillStyle = 'rgba(0,0,0,.12)';
+    ctx.fillRect(Math.floor(x*cs), 0, Math.max(1, cs*0.12), px);
+  }
+}
+
+var PATS = [
+  {name:'菱格花窗', ph:'几何纹 · 骨架', gen:mDiamond, rows:[
+    ['骨架','以菱格为基本单元，内外套叠、四角相接，连成不封边的网格。壮锦几乎所有纹样都长在这个骨架上。'],
+    ['寓意','菱形在壮族织造里不只是几何，也像一块“田”。稻作民族的田块形状，直接进了纹样。'],
+    ['用处','被面主体、背带芯、嫁妆锦的中心格。'],
+    ['织法','一层边框一种颜色，全靠断纬换梭；层数越多越费工，见过七八层叠起来的。']
+  ]},
+  {name:'回纹', ph:'几何纹 · 边饰', gen:mMeander, rows:[
+    ['骨架','方形回环层层套叠，一线到底不断头，转折处全是直角。'],
+    ['寓意','绵延不绝、周而复始。常作边框，把主体纹样“锁”在中间。'],
+    ['用处','被面四周、围裙下摆、锦带的收口。'],
+    ['织法','回纹最怕转角：换色断错一处，整圈就歪，而这种歪要到落布才看得见。']
+  ]},
+  {name:'水波纹', ph:'几何纹 · 自然崇拜', gen:mWave, rows:[
+    ['骨架','阶梯状折线模拟水波。注意它是“阶梯”而不是曲线——织机只会走直角与 45°。'],
+    ['寓意','壮族依水而居，稻作靠水。水波纹是敬畏，也是生态观留下的痕迹。'],
+    ['用处','二方连续，多用于腰带、裙摆、被面边饰。'],
+    ['织法','两个方向相反的阶梯错位咬合，靠纬线浮长的长短控制波峰高度。']
+  ]},
+  {name:'太阳花纹', ph:'几何纹 · 稻作崇拜', gen:mSun, rows:[
+    ['骨架','中心放射，八角星形，外圈再套一道菱格；放射角度只能是织机能整除的那几种。'],
+    ['寓意','稻作民族对太阳的崇拜，指向光明、生长与丰年。'],
+    ['用处','背带正中的主纹，也单独成为一件装饰画。'],
+    ['织法','放射纹要在花笼上排满一圈竹条，一个花本往往要编上百根。']
+  ]},
+  {name:'盘长纹', ph:'几何纹 · 吉祥符号', gen:mKnot, rows:[
+    ['骨架','45° 斜向交织的连续回环，四方连续，看不出起点也找不到终点。'],
+    ['寓意','长久、连绵、福寿不断，与“万字不到头”同属一类祝愿。'],
+    ['用处','锦面底纹、包袋与服饰的整幅铺陈。'],
+    ['织法','全靠对角线的浮长线成立，是断纬技艺的试金石——浮长过长会勾纱。']
+  ]},
+  {name:'锯齿边饰', ph:'几何纹 · 界', gen:mTeeth, rows:[
+    ['骨架','二方连续的阶梯三角，宽窄由花本的竹条数决定，不能随意缩放。'],
+    ['寓意','界。它把纹样与纹样隔开，也把“锦”与“布”隔开。'],
+    ['用处','所有壮锦的边缘处理，几乎都能找到它。'],
+    ['织法','边饰常用通经通纬，速度快；主体才动断纬——一匹锦的成本就藏在这个分工里。']
+  ]}
+];
+
+var motifCells = PATS.map(function(p){ return p.gen(32); });
+
+(function initPatterns(){
+  var patCanvases = Array.prototype.slice.call(document.querySelectorAll('.motif-pat'));
+  patCanvases.forEach(function(cv, i){ paint(cv, motifCells[i]); });
+
+  Array.prototype.slice.call(document.querySelectorAll('.motif-cmp')).forEach(function(cv){
+    paint(cv, mDiamond(32), cv.dataset.mode === 'plain' ? 'plain' : 'cut');
+  });
+
+  var info = document.getElementById('patInfo');
+  var grid = document.getElementById('patGrid');
+
+  function show(i){
+    var p = PATS[i], html = '<h3>' + p.name + '</h3><p class="ph">' + p.ph + '</p><dl class="pat-facts">';
+    p.rows.forEach(function(r){ html += '<div class="row"><dt>' + r[0] + '</dt><dd>' + r[1] + '</dd></div>'; });
+    html += '</dl>';
+    info.innerHTML = html;
+    Array.prototype.slice.call(grid.children).forEach(function(b, k){
+      b.classList.toggle('on', k === i);
+    });
+  }
+
+  grid.addEventListener('click', function(e){
+    var btn = e.target.closest('.pat');
+    if(!btn){ return; }
+    show(parseInt(btn.dataset.pat, 10));
+  });
+  show(0);
+})();
+</script>
+
+<script>
+/* 路由 */
+(function(){
+  var views = Array.prototype.slice.call(document.querySelectorAll('.view'));
+  var links = Array.prototype.slice.call(document.querySelectorAll('[data-go]'));
+  function go(id){
+    var ok = false;
+    views.forEach(function(v){ var m = (v.id === 'v-' + id); if(m) ok = true; v.classList.toggle('on', m); });
+    if(!ok){ id = 'home'; views.forEach(function(v){ v.classList.toggle('on', v.id === 'v-home'); }); }
+    links.forEach(function(a){
+      if(a.classList.contains('on')) a.classList.remove('on');
+      if(a.dataset.go === id && a.parentElement && a.parentElement.classList.contains('menu')) a.classList.add('on');
+    });
+    window.scrollTo(0,0);
+  }
+  links.forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.dataset.go;
+      if(!id){ return; }
+      e.preventDefault();
+      if(location.hash !== '#' + id){
+        try { history.pushState(null, '', '#' + id); } catch(err){ location.hash = id; }
+      }
+      go(id);
+    });
+  });
+  window.addEventListener('popstate', function(){ go((location.hash||'#home').slice(1)); });
+  window.addEventListener('hashchange', function(){ go((location.hash||'#home').slice(1)); });
+  go((location.hash||'#home').slice(1));
+})();
+</script>
+</body>
+</html>
